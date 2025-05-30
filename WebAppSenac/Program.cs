@@ -1,7 +1,18 @@
+using Microsoft.EntityFrameworkCore;
+using WebAppSenac.Models;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//CONFIGURAR A CONEXÃO DO BANCO DE DADOS
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+//REGISTRAR O CONTEXTO DO BANCO DE DADOS
+IServiceCollection serviceCollection = builder.Services.AddDbContext<ContextoEscola>(options => options.UseSqlServer(connectionString));
+
 
 var app = builder.Build();
 
