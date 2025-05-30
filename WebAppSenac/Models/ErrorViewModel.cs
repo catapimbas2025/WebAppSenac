@@ -7,3 +7,4 @@ namespace WebAppSenac.Models
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
     }
 }
+//
