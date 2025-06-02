@@ -4,10 +4,18 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Detalhes</h1>
+<style>
+
+h1{color:darkolivegreen;}
+h4{color:darkolivegreen;}
+a{color:darkolivegreen;}
+
+</style>
+
+<b><h1>Detalhes</h1></b>
 
 <div>
-    <h4>Aluno</h4>
+    <b> <h4>Aluno</h4></b>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -37,6 +45,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Editar</a> |
-    <a asp-action="Index">voltar à lista</a>
+    <b> <a asp-action="Edit" asp-route-id="@Model?.Id">Editar</a> |</b>
+    <b> <a asp-action="Index">voltar à lista</a></b>
 </div>

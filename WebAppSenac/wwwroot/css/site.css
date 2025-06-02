@@ -1,5 +1,6 @@
 html {
   font-size: 14px;
+ /* background-color:aquamarine;*/
 }
 
 @media (min-width: 768px) {
@@ -15,8 +16,15 @@ html {
 html {
   position: relative;
   min-height: 100%;
+  /*background-color:darkgreen;*/
 }
 
+
+
+
+
 body {
-  margin-bottom: 60px;
+    background-color:blanchedalmond;
+
+    margin-bottom: 60px;
 }

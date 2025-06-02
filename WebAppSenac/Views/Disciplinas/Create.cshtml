@@ -3,7 +3,15 @@
 @{
     ViewData["Title"] = "Create";
 }
+<style>
+    h1 {color: darkolivegreen;}
 
+    h4 {color: darkolivegreen;}
+
+    a {color: darkolivegreen;}
+
+    label {color: darkolivegreen;}
+</style>
 <h1>Cadastro</h1>
 
 <h4>Disciplina</h4>
@@ -13,17 +21,17 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Nome" class="control-label"></label>
+                <b> <label asp-for="Nome" class="control-label"></label></b>
                 <input asp-for="Nome" class="form-control" />
                 <span asp-validation-for="Nome" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Descricao" class="control-label"></label>
+                <b> <label asp-for="Descricao" class="control-label"></label></b>
                 <input asp-for="Descricao" class="form-control" />
                 <span asp-validation-for="Descricao" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="CargaHoraria" class="control-label"></label>
+                <b> <label asp-for="CargaHoraria" class="control-label"> Carga Horária</label></b>
                 <input asp-for="CargaHoraria" class="form-control" />
                 <span asp-validation-for="CargaHoraria" class="text-danger"></span>
             </div>
@@ -35,7 +43,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">Lista de cadastros</a>
+    <b> <a asp-action="Index">Lista de cadastros</a></b>
 </div>
 
 @section Scripts {

@@ -3,10 +3,17 @@
 @{
     ViewData["Title"] = "Edit";
 }
+<style>
+    h1 {color: darkolivegreen;}
+    h4 {color:darkolivegreen;}
+    a {color: darkolivegreen;}
+    label {color: darkolivegreen;}
 
-<h1>Editar</h1>
 
-<h4>Aluno</h4>
+</style>
+<b> <h1>Editar</h1></b>
+
+<b> <h4>Aluno</h4></b>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -14,22 +21,22 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
-                <label asp-for="Nome" class="control-label"></label>
+                <b>  <label asp-for="Nome" class="control-label"></label></b>
                 <input asp-for="Nome" class="form-control" />
                 <span asp-validation-for="Nome" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Endereco" class="control-label"></label>
+                <b> <label asp-for="Endereco" class="control-label"></label></b>
                 <input asp-for="Endereco" class="form-control" />
                 <span asp-validation-for="Endereco" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
+                <b> <label asp-for="Email" class="control-label"></label></b>
                 <input asp-for="Email" class="form-control" />
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Telefone" class="control-label"></label>
+                <b>  <label asp-for="Telefone" class="control-label"></label></b>
                 <input asp-for="Telefone" class="form-control" />
                 <span asp-validation-for="Telefone" class="text-danger"></span>
             </div>
@@ -41,7 +48,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">voltar à lista</a>
+    <b> <a asp-action="Index">voltar à lista</a></b>
 </div>
 
 @section Scripts {
